@@ -5,6 +5,7 @@ Contains python codes to reproduce results obtained in Farahani and Goodwell 202
 Python codes for “Information Flow Paths Characterize Drivers of Land-Atmosphere Carbon Fluxes from Machine Learning Models and Data” by: M. A. Farahani and A.E. Goodwell, submitted Aug 2023 to Water Resources Research
 
 - **Dataset Preprocessing Script:** Readdata.py
+
 The provided script is primarily designed for preprocessing and cleaning a set of CSV datasets. This script requires pandas and NumPy libraries for data manipulation and numerical operations respectively. The primary function accepts paths to five datasets. These datasets are categorized into two major groups: `Ne` and `Br`, (AMF_US.zip file) from 5 maize-soybean rotation sites in the FLUXNET2015 dataset:
     1. [USNe1](https://doi.org/10.17190/AMF/1246084)
     2. [USNe2](https://doi.org/10.17190/AMF/1246085)
@@ -30,6 +31,7 @@ The provided script is primarily designed for preprocessing and cleaning a set o
 11. Data Normalization: Normalized (frames, method): Normalize your data using one of the three methods: Standard, MinMax, or Quantile normalization.
 
 - **Calculate all predictive and functional performance metrics:** Performance.py
+
     Load your data. Ensure that your data conforms to the labels and datasets specified. Utilize the defined functions to compute metrics and visualizations as per your requirements. The script imports two custom modules “allfunctions” (as af) and “Performance” (as per). Ensure these modules are present in the same directory or their paths are appropriately added.
 
     Note: It's advisable to run this on a machine with multiple cores as the script uses parallel processing for some computations. Ensure to have adequate memory, especially when dealing with large datasets, as some computations (like heatmaps) can be memory intensive.
